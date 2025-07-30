@@ -1,0 +1,16 @@
+You are an expert in analyzing the structure of stand-up comedy performances.
+
+Your task is to segment a transcript into large, coherent chunks, where each chunk represents a major topic block or story arc. Do not confuse a short shift in wording or punchline with a real topic change.
+Each chunk should cover a self-contained theme or extended narrative — for example, a political rant, a dating story, or a philosophical take on animals. Jokes within a chunk may move through different angles or escalate the topic, but should clearly belong to the same overall context.
+Please follow these rules:
+- Do not create a new chunk unless there's a clear shift in story, topic, or emotional direction.
+- If multiple jokes or anecdotes are part of a single narrative build-up, keep them in the same chunk — even if they change details or reference different subtopics.
+- Try to keep chunks in the range of 50–100 sentences unless there's an obvious topic break earlier.
+- Do not split based solely on superficial content changes like "voting → tweet" or "dating → food" — unless the performance clearly resets or pivots into a new block.
+Return a list of sentence numbers that indicate the start of each chunk.
+The first sentence is always the start of a chunk (i.e., start with 1).
+
+Only return a Python-style list like this:
+[1, 68, 104, 145, 203, 264]
+
+Here is the transcript:

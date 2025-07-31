@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Model files (large files)
+model/*.pth
+model/*/best_model.pth
+model/*/final_model.pth
+model/*/config.json
+model/*/loss_curve.png
+model/*/best_confusion_matrix.png

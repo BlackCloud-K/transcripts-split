@@ -1,2 +1,24 @@
-google-generativeai>=0.8.0
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+peft>=0.6.0
+
+# Training and evaluation
+evaluate>=0.4.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Utilities
+tqdm>=4.65.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optional but recommended
+wandb>=0.15.0  # for experiment tracking
+tensorboard>=2.13.0  # for training visualization
+
+# For data processing
 python-dotenv>=1.0.0 
